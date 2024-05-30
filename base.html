@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+                <h6>Laptop Gamer AMD</h6>
+                <p>Precio base: $<span id="precio-inicial"></span> </p>
+        
+                <p>Cantidad:
+                <span id="cantidad-item" class="cantidad-item">0</span>
+                <button id="btn-mas">+</button>
+                <button id="btn-menos">-</button>
+                <!-- Hola! hice el desafío siguiendo los ejercicios de la guía, pero en clases y la tutoría nos explicaron que esa sintaxis está desactualizada, por lo que en la tutoría le pedí ayuda a Luca para traducir ese codigo a las practicas mas modernas y aceptadas, por eso dejo comentado mi primer resultado acá en el html basado en como aparece en los ejemplos del material, y en el script de js con la sintaxis moderna. 
+                Fue algo confuso de entender pero aprendí mucho con el desafío y la confusión ya me van quedando más claras las cosas -->
+                <!-- <button id="btn-mas" 
+                onclick="
+                    cantidad = document.querySelector('.cantidad')
+                    cuenta = Number(cantidad.innerHTML)
+                    cuenta = cuenta + 1
+                    cantidad.innerHTML = cuenta
+                    precio = 400000
+                    valorTotal = document.querySelector('.valor-total')
+                    valorTotal.innerHTML = precio * cuenta
+                    precioSpan = document.querySelector('.precio-inicial')
+                    precioSpan.innerHTML = precio"
+                >+</button> -->
+                <!-- <button id="btn-menos" 
+                onclick="
+                    cantidad = document.querySelector('.cantidad')
+                    cuenta = Number(cantidad.innerHTML)
+                    cuenta = cuenta - 1
+                    cantidad.innerHTML = cuenta
+                    precio = 400000
+                    valorTotal = document.querySelector('.valor-total')
+                    valorTotal.innerHTML = precio * cuenta
+                    precioSpan = document.querySelector('.precio-inicial')
+                    precioSpan.innerHTML = precio"
+                >-</button> -->
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="total-section">
+        <p>Total a pagar: $<span id="valor-total">0</span> </p>
+    </div>
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
